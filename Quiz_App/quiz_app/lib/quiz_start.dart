@@ -17,7 +17,8 @@ class _QuizAppState extends State<QuizApp> {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Image.asset(activeImage, width: 200),
+        Image.asset(activeImage,
+            width: 300, color: const Color.fromARGB(150, 255, 255, 255)),
         Container(
           padding: const EdgeInsets.only(top: 40),
           child: const Text("Learn Flutter the Fun Way!",
