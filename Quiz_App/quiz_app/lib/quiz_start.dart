@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
 
-class QuizApp extends StatefulWidget {
-  const QuizApp({super.key});
+class StartScreen extends StatelessWidget {
+  const StartScreen(this.startQuiz, {super.key});
 
-  @override
-  State<QuizApp> createState() {
-    return _QuizAppState();
-  }
-}
-
-class _QuizAppState extends State<QuizApp> {
-  var activeImage = 'assets/images/quiz-logo.png';
+  final void Function() startQuiz;
+  final activeImage = 'assets/images/quiz-logo.png';
 
   @override
   Widget build(context) {
@@ -26,7 +20,7 @@ class _QuizAppState extends State<QuizApp> {
         ),
         const SizedBox(height: 30),
         OutlinedButton.icon(
-          onPressed: () {},
+          onPressed: startQuiz,
           style: OutlinedButton.styleFrom(
             foregroundColor: Colors.white,
           ),
