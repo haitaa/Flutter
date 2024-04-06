@@ -38,7 +38,7 @@ class ResultsScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                  'You answered $numCorrectQuestions out of $numTotalQuestions questions correctly!'),
+                  'You answered $numCorrectQuestions out of $numTotalQuestions questions correctly.'),
               const SizedBox(height: 30),
               QuestionSummary(summaryData: summaryData),
               const SizedBox(height: 30),
